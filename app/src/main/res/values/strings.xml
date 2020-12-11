@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="numbers">
+        <item>Sede Mirafloress</item>
+        <item>Sede Santa Anita</item>
+    </string-array>
+
+
+</resources>

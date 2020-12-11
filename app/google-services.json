@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "880069595284",
+    "project_id": "rico-78870",
+    "storage_bucket": "rico-78870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880069595284:android:2ea3ceabc5274a52c06481",
+        "android_client_info": {
+          "package_name": "com.example.rico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880069595284-s0m7nhvpebsn5cqenr4c941qdf9dbtn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGjr_A0Uo-Wa6JOXtbX_pcSbhefF1AjrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880069595284-s0m7nhvpebsn5cqenr4c941qdf9dbtn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

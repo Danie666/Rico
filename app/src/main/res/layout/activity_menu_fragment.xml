@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardReservar"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="409dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_mreserva"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="216dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Reservar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTc"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="367dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_mterminos"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Terminos y condiciones"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="269dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_mcomentario"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Mis comentarios"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAjustes"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="338dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="219dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_majustes"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Ajustes"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="219dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_mi"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Sobre nosostros"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+         />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="116dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_cuenta"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRestaurante"
+        android:layout_width="60dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="367dp"
+        android:backgroundTint="@color/purple_700"
+        >
+
+        <ImageView
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="04dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_comidas"
+            android:layout_marginLeft="04dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</FrameLayout>
+
+
