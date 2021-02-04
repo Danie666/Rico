@@ -10,7 +10,7 @@ import android.view.View;
 
 
 public class menuFragment extends AppCompatActivity   implements  View.OnClickListener{
-    private CardView cardReservar,cardTc, cardComentarios, cardAjustes, cardInfo, cardRestaurante;
+    private CardView cardReservar,cardTc, cardComentarios, cardAjustes, cardInfo, cardRestaurante,cardmapa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,10 @@ public class menuFragment extends AppCompatActivity   implements  View.OnClickLi
         cardAjustes=findViewById(R.id.cardAjustes);
         cardInfo=findViewById(R.id.cardInfo);
         cardRestaurante=findViewById(R.id.cardRestaurante);
+
+
+
+
 
         cardReservar.setOnClickListener(this::onClick);
         cardTc.setOnClickListener(this::onClick);
@@ -46,6 +50,7 @@ public class menuFragment extends AppCompatActivity   implements  View.OnClickLi
                 break;
             case R.id.cardRestaurante: i = new Intent(this, Restaurante.class);startActivity(i);
                 break;
+
             default:break;
 
         }

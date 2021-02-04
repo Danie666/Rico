@@ -16,7 +16,7 @@ public class Restaurante extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager viewPager;
-    TabItem tab1, tab2, tab3, tab4;
+    TabItem tab1, tab2, tab3, tab4,tab5;
     PagerController pagerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class Restaurante extends AppCompatActivity {
         tab2 = findViewById(R.id.tabplatos);
         tab3 = findViewById(R.id.tabacercade);
         tab4 = findViewById(R.id.tabcomentarios);
+        //tab5 = findViewById(R.id.tabmaps);
 
         pagerAdapter = new PagerController(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
@@ -52,6 +53,9 @@ public class Restaurante extends AppCompatActivity {
                 if (tab.getPosition() == 3) {
                     pagerAdapter.notifyDataSetChanged();
                 }
+              /*  if (tab.getPosition() == 4) {
+                    pagerAdapter.notifyDataSetChanged();
+                }*/
             }
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
