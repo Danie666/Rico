@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +29,7 @@ import java.util.Map;
 
 public class Reservade extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
    //private FirebaseAuth mAuth;
-
+    FirebaseAuth mAuth;
     DatabaseReference mRootReference;
 
     private int dia,mes,ano,hora,minutos;
@@ -43,9 +44,9 @@ public class Reservade extends AppCompatActivity implements AdapterView.OnItemSe
        // Button
        mRootReference= FirebaseDatabase.getInstance().getReference();
 
-     /*   FirebaseUser user = mAuth.getCurrentUser();
-        String userID =user.getUid();*/
-
+   //    FirebaseUser user = mAuth.getCurrentUser();
+    //    String userID =user.getUid(); */
+     //   String id= mAuth.getCurrentUser().getUid();
 
 
         mReservar=findViewById(R.id.btnreserva);
@@ -93,26 +94,48 @@ public class Reservade extends AppCompatActivity implements AdapterView.OnItemSe
             public void onClick(View v) {
 
 
-               String sede =mSede.getText().toString();
+                String sede = mSede.getText().toString();
                 String cantidad = mEditTextCantidad.getText().toString();
-                String detalle =mEditTextdetalle.getText().toString();
-               String fecha=mFecha.getText().toString();
-                String dia=mDia.getText().toString();
+                String detalle = mEditTextdetalle.getText().toString();
+                String fecha = mFecha.getText().toString();
+                String dia = mDia.getText().toString();
 
                 Map<String, Object> datosreserva = new HashMap<>();
-               datosreserva.put("sede",sede);
-               datosreserva.put("cantidad", cantidad);
-               datosreserva.put("fecha",fecha);
-                datosreserva.put("dia",dia);
+                datosreserva.put("sede", sede);
+                datosreserva.put("cantidad", cantidad);
+                datosreserva.put("fecha", fecha);
+                datosreserva.put("dia", dia);
                 datosreserva.put("detalle", detalle);
 
-              /*  mRootReference.child("reserva").getKey(userID).setValue(datosreserva); */
-               mRootReference.child("reservas").push().setValue(datosreserva);
+                if(!sede.isEmpty() && !cantidad.isEmpty() && !fecha.isEmpty() && !dia.isEmpty()){
+                    mRootReference.child("reservas").push().setValue(datosreserva);
+
+                    Toast.makeText(Reservade.this,"Registro exitoso",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(Reservade.this,menuFragment.class));
+                }
+                else {
+                    Toast.makeText(Reservade.this,"Los campos estan vacios,verificar",Toast.LENGTH_LONG).show();
+                }
+
+                    //   mRootReference.child("reserva").getKey(userID).setValue(datosreserva); child //
+
+
+
             }
+
+
         });
 
-
     }
+
+
+/*    private  void registercliente(){
+
+
+
+
+    }*/
+
     @Override
     public void onClick(View v) {
         if (v== btnfecha) {
