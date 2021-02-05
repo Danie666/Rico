@@ -26,6 +26,8 @@ public class PagerController extends FragmentPagerAdapter {
                 return new Acercade ();
             case 3:
                 return new Comentarios ();
+            case 4 :
+                    return new mapaUbicacion();
             default:
                 return null;
 

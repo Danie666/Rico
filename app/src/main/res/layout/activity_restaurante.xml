@@ -54,19 +54,19 @@
             android:id="@+id/tabcomentarios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comentarios"
-            tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_conversion_absoluteWidth="0dp"
-            tools:layout_editor_absoluteX="300dp"
-            tools:layout_editor_absoluteY="50dp">
-
-        </com.google.android.material.tabs.TabItem>
+            android:text="Comentarios" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabmaps"
+            android:id="@+id/tabmapa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ubicacion" />
+            android:text="Tab6"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="50dp"
+
+            />
 
     </com.google.android.material.tabs.TabLayout>
 

@@ -24,8 +24,6 @@ public class Restaurante extends AppCompatActivity {
         setContentView(R.layout.activity_restaurante);
 
 
-
-
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
 
@@ -33,7 +31,7 @@ public class Restaurante extends AppCompatActivity {
         tab2 = findViewById(R.id.tabplatos);
         tab3 = findViewById(R.id.tabacercade);
         tab4 = findViewById(R.id.tabcomentarios);
-        //tab5 = findViewById(R.id.tabmaps);
+        tab5 = findViewById(R.id.tabmapa);
 
         pagerAdapter = new PagerController(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
@@ -53,9 +51,9 @@ public class Restaurante extends AppCompatActivity {
                 if (tab.getPosition() == 3) {
                     pagerAdapter.notifyDataSetChanged();
                 }
-              /*  if (tab.getPosition() == 4) {
+                if (tab.getPosition() == 4) {
                     pagerAdapter.notifyDataSetChanged();
-                }*/
+                }
             }
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
