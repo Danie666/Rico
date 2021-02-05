@@ -36,10 +36,9 @@ public class mapaUbicacion extends Fragment {
 
             LatLng PUNTO1 = new LatLng(-12.0904005, -77.0735007);
             googleMap.addMarker(new MarkerOptions().position(PUNTO1).title("porkys"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(PUNTO1));
+            //googleMap.moveCamera(CameraUpdateFactory.newLatLng(PUNTO1));
 
-
-
+            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(PUNTO1,18),5000,null);
        //     LatLng sydney = new LatLng(-34, 151);
          //   googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
          //   googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
